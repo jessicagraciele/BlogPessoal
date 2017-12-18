@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/estilo2.css">
+</head>
+
+<body>
+<section>
+
+<!--menu-->
+<div class="topnav" id="myTopnav">
+  <a href="index.html #home" class="active">Home</a>
+  <a href="algoritmos.html">Algoritmos</a>
+  <a href="design.html">Design</a>
+  <a href="index.html #contato">Contato</a>
+  <a href="index.html #sobre">Sobre</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<header>
+</header>
+	<!--menu-->
+		<main>
+			<h2>Objetivos Gerais</h2>
+			<p>Iniciar a formação em programação de computadores por meio de uma linguagem 
+			facilitadora do aprendizado de algoritmos, preferencialmente alguma uma linguagem de amplo emprego no mercado.
+			</p>
+			<p>Lógica de Programação é a técnica de desenvolver algoritmos (sequências lógicas) para 
+			atingir determinados objetivos dentro de certas regras baseadas na Lógica matemática e em outras teorias
+			básicas da Ciência da Computação e que depois são adaptados para a Linguagem de Programação utilizada pelo
+			programador para 
+			construir seu software.</p>
+
+			<p>Um algoritmo é uma sequência não ambígua de instruções que é executada até que determinada
+			condição se verifique. Mais especificamente, em matemática, constitui o conjunto 
+			de processos (e símbolos que os representam) para efetuar um cálculo. </p>
+
+			<p>Um algoritmo não representa, necessariamente, um programa de computador, e sim os passos necessários 
+			para realizar uma tarefa. Sua implementação pode ser feita por um computador, por outro tipo
+			de autômato ou mesmo por um ser humano. Diferentes algoritmos podem realizar a mesma tarefa usando 
+			um conjunto diferenciado de instruções em mais ou menos tempo, espaço ou esforço do que outros. 
+			Tal diferença pode ser reflexo da complexidade computacional aplicada, que depende de estruturas 
+			de dados adequadas ao algoritmo. Por exemplo, um algoritmo para se vestir pode especificar que você vista primeiro as meias e os sapatos antes de vestir a calça enquanto outro algoritmo especifica que você deve primeiro vestir a calça e depois as meias e os sapatos. 
+			Fica claro que o primeiro algoritmo é mais difícil de executar que o segundo apesar 
+			de ambos levarem ao mesmo resultado.</p>
+			<p>Exemplo 1</p>
+			#include<stdio.h>
+					<div class="cod"><p>int main(){</p>
+					<p>	int matriz[3][3];</p>
+					<p>	int maior = 0;</p>
+					<p>	int indice_a = 0;</p>
+					<p>	int indice_b = 0;</p>
+					<p>	int i = 0;</p>
+					<p>	int j = 0;</p>
+						
+
+					<p>	for (i=0; i<3; i++){</p>
+					<p>		for (j=0; j<3; j++){</p>
+					<p>			 printf("\nDigite a posicao [%d][%d] da matriz: ", i+1, j+1);</p>
+					<p>			scanf("%d", &matriz[i][j]); // le o numero digitado e armazena na posição I, J</p>
+					<p>		}
+					<p>	}
+					<p>		 for (i = 0; i < 3; i++) // laço para percorrer a linha da matriz</p>
+					<p>       {
+					<p>           for (j = 0; j<maior;) // verifica se o numero do indice atual é maior que o anterior,</p>
+					<p>                                         //  caso sim, será gravado o numero e o indice nas </p>
+					<p>                                         //  variáveis auxiliares</p>
+					<p>               {</p>
+					<p>                  maior = matriz[i][j];</p>
+					<p>                  indice_a = i;</p>
+					<p>                  indice_b = j;</p>
+					<p>                }</p>
+					<p>           }</p>
+					<p>       </p>
+					<p>       printf("O maior numero digitado foi: %d, estando no indice [%d][%d]\n\n",</p> 
+					<p>	   maior, indice_a+1, indice_b+1); // mostra na tela o maior numero e os indices do mesmo</p>
+					<p>       system("pause");</p>
+					<p>}</p></div>
+					</div>
+					</div>
+<div class="conteudos">
+<a href="https://programacaodescomplicada.wordpress.com/indice/linguagem-c/"><p class="imagemlink"> Linguagem C</p></a>
+<a href="http://excript.com/curso-c.html"><p class="imagemlink"> Curso de C</p></a>
+</div>
+		</main>
+		</section>
+		<footer>
+		<p> Jessica Graciele </p>
+		<p>2017 © copyright - Todos os direitos reservados.</p>
+		</footer>
+	</section>
+	<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/estilo2.css">
+</head>
+
+<body>
+<!--menu-->
+<div class="topnav" id="myTopnav">
+ <a href="index.html #home" class="active">Home</a>
+  <a href="algoritmos.html">Algoritmos</a>
+  <a href="design.html">Design</a>
+  <a href="index.html #contato">Contato</a>
+  <a href="index.html #sobre">Sobre</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<header>
+</header>
+	<!--CONTEUDO CENTRAL-->
+	<section id="tudo">
+	<section id="conteudoprincipal">
+		<main>
+			<h2>Objetivos Gerais</h2>
+			<p>Apresentar as bases do design gráfico de produção de sítios Internet com emprego de softwares.</p>
+			<p>Projetar mock-ups (cenas) 
+			usando o software de design digital, em seguida implementar o projeto como um sítio Internet.
+			</p>
+			<p>Design é uma disciplina de forte cunho projetual, e tem a ver com “resolver problemas” 
+			 valendo-se de formas, estética, e criação de objetos para atender uma demanda 
+			 (seja ela qual for). Digital refere-se à web, e a tudo aquilo que é “virtual”.</p>
+
+			<p>
+			O mercado de desenvolvimento de tecnologia tem crescido no Brasil, atualmente temos uma movimentação
+			que gira em torno de 25 bilhões e, segundo o Ministério da Ciência, Tecnologia e Inovação (MCTI), 
+			a projeção é de 70 bilhões até 2017. Temos um terreno fértil para empreendedores e desenvolvedores
+			digitais. A cada dia vemos novas startups surgirem com propostas originais que se mostram viáveis e
+			lucrativas. Um mercado com 
+			amplas possibilidades online (e boa remuneração) pede por profissionais capacitados da área
+			do design digital.
+			</p>
+		</main>
+		</section>
+<!--GALERIA DE FOTOS COM FLEXBOX-->
+	<section id="galfotos">
+	<div class="galeriapai">
+	<p> GALERIA DE PROJETOS </p>
+			<div class="galeria">
+				<div><img src="fabi/arte1.png"></div>
+				<div><img src="fabi/arte2.png"></div>
+				<div><img src="fabi/arte3.png"></div>
+				<div><img src="fabi/arte4.png"></div>
+				<div><img src="fabi/p1.jpg"></div>
+				<div><img src="fabi/p2.jpg"></div>
+				<div><img src="fabi/p3.jpg"></div>
+				<div><img src="fabi/p4.png"></div>
+				<div><img src="fabi/p5.jpg"></div>
+			</div>
+	</div>
+	</section>
+		<footer>
+		<p> Jessica Graciele </p>
+		<p>2017 © copyright - Todos os direitos reservados.</p>
+		</footer>
+	</section>
+	<script>
+	function ancora(objID) {
+			document.getElementById(objID).focus();
+			}
+	function myFunction() {
+		var x = document.getElementById("myTopnav");
+		if (x.className === "topnav") {
+			x.className += " responsive";
+		} else {
+			x.className = "topnav";
+		}
+	}
+	</script>
+</body>
+</html>
