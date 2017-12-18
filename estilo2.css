@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	margin: 0 auto;
+    font-family: "Lato", sans-serif;
+	background-image: url('../imagens/dust_scratches.png');
+}
+
+/*---------------------------MENU---------------------------*/
+.topnav {
+  overflow: hidden;
+  background-color:rgba(66,66,66,0.4);
+  
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #999999;
+  color: black;
+}
+
+.active {
+  background-color: #505050;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+/*DEFINIÇÃO DOS TAMANHOS DO MENU PARA MENORES DISPOSITIVOS*/
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+}
+/*---------------------------CABEÇALHO---------------------------*/
+header {
+	height: 45vh;
+    background-image: url('../imagens/banner.png');
+    background-size: cover;
+	margin-bottom:50px;
+}
+main {
+  float:left;
+  width:100%;
+  padding:0 20px;
+  text-align: center;
+}
+
+
+footer {
+	background-color:rgba(00,00,00,0.2);
+	text-align:center;
+	padding:10px;
+	margin-top:50px;
+}
+p{
+	font-family:Century Gothic;
+	font-size: 22px;
+	color: black;
+}
+.disciplinas{
+width:70%;
+}
+.cod{
+	font-family: Century Gothic;
+	size: 12px;
+	color:black;
+}
+.cod p{
+	padding-bottom:1px;
+	padding-top:0px;
+	margin:0;
+
+}
+.imagemlink{
+	width:30%;
+}
+
+.conteudos{
+	width: 50%;
+}
+/*GALERIA DE IMAGENS DA PAG DESIGN*/
+.galeriapai{
+	background-color:rgba(00,00,00,0.2);
+	text-align:center;
+	padding:1%;
+	margin-top:5%;
+}
+.galeriapai p{
+	font-family: Century Gothic;
+	font-size: 30px;
+	color: Black;
+}
+div{
+  border: none;
+  box-sizing: border-box;
+}
+.galeria{
+  display: flex;
+  flex-wrap: wrap;
+  padding:5px;
+  margin-top:20px;
+}  
+& > div{
+    max-width: 33%;
+    flex: 1 0 auto;
+    align-items: flex-start;
+}
+img {
+      max-width: 100%;
+}
+#galfotos @media only screen and (max-width:320px) {
+	width:100%;
+}
+#conteudoprincipal @media only screen and (max-width:320px) {
+	width:100%;
+}
+
+section{
+	overflow:auto;
+	padding-bottom: 2vh;
+	padding-top: 2vh;
+}
+#tudo{
+	width:100%;
+}
+/*DEFINIÇÃO DA TELA PARA MENORES DISPOSITIVOS*/ 
+@media only screen and (max-width:320px) {
+  nav, main, aside, div, .galeria{
+    width:100%;
+  }
+}
+
